@@ -10,7 +10,9 @@ function Persons() {
       <div className="cards">
         {persons.map((person) => {
           return (
-            <div>{show ? <Person key={person.id} {...person} /> : null}</div>
+            <div>
+              {show ? <Person key={person.id} {...person} /> : null}
+            </div>
           )
         })}
       </div>
